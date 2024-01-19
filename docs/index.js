@@ -1,3 +1,3 @@
-import { os } from './os/os.js';
+import { efos } from './eflib/efos/efos.js';
 
-os.run();
+efos.run();

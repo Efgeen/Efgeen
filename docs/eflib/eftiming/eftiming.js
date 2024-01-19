@@ -38,7 +38,7 @@ export const eftiming = (() => {
                 max_dur = 0.1;
             }
             if ((dur < min_dur) || (dur > max_dur)) {
-                t.spike_count += 0x01;
+                ++t.spike_count;
                 if (t.spike_count > 0x14) {
                     eftiming.reset(t);
                 }
@@ -47,11 +47,11 @@ export const eftiming = (() => {
             if (efring.full(t.ring)) {
                 old_val = efring.dequeue(t.ring);
                 t.accum -= old_val;
-                t.num -= 0x01;
+                --t.num;
             }
             efring.enqueue(t.ring, dur);
             t.accum += dur;
-            t.num += 0x01;
+            ++t.num;
             t.avg = t.accum / t.num;
             t.spike_count = 0x00;
         },

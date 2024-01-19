@@ -1,0 +1,129 @@
+:root {
+    --efred: #F74843;
+    --efyellow: #F2F743;
+    --efgreen: #43F748;
+    --efcyan: #43F2F7;
+    --efblue: #4843F7;
+    --efmagenta: #F743F2;
+}
+
+#efos {
+    position: absolute;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border: 1px solid white;
+}
+
+#efdesktop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#efdesktop > * {
+    height: calc(100% - 60px);
+    top: 30px;
+}
+
+#efnavigator {
+    position: absolute;
+    width: 15%;
+    border-right: 1px solid white;
+    line-height: 30px;
+}
+
+#efnavigator > span {
+    font-family: Consolas;
+    font-size: 14px;
+    position: absolute;
+    width: calc(100% - 16px);
+    color: white;
+    padding: 0px 8px 0px 8px;
+    border-bottom: 1px solid white;
+}
+
+#efnavigator > span:hover {
+    cursor: pointer;
+}
+
+#efconsole {
+    position: absolute;
+    width: 85%;
+    left: 15%;
+}
+
+#efconsole > span {
+    font-family: Consolas;
+    font-size: 14px;
+    position: absolute;
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    color: white;
+    padding: 16px 16px 16px 16px;
+}
+
+#efheader {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #000000BF;
+    border-bottom: 1px solid white;
+}
+
+#efversion {
+    font-family: Consolas;
+    font-size: 14px;
+    position: absolute;
+    display: inline-block;
+    color: white;
+    padding: 0px 8px 0px 8px;
+    border-right: 1px solid white;
+}
+
+#efdatetime {
+    font-family: Consolas;
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-block;
+    color: white;
+    padding: 0px 8px 0px 8px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+#eftiming {
+    font-family: Consolas;
+    font-size: 14px;
+    position: absolute;
+    right: 0px;
+    display: inline-block;
+    color: white;
+    padding: 0px 8px 0px 8px;
+    border-left: 1px solid white;
+}
+
+#effooter {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #000000BF;
+    border-top: 1px solid white;
+    bottom: 0;
+}
+
+#efcopyright {
+    font-family: Consolas;
+    font-size: 14px;
+    position: absolute;
+    right: 0px;
+    display: inline-block;
+    color: white;
+    padding: 0px 8px 0px 8px;
+    border-left: 1px solid white;
+}

@@ -5,7 +5,7 @@ export const eftimestamp = (() => {
             return {};
         },
         now: function(ts) {
-            return performance.now();
+            return performance.now() / 1000.0;
         }
     });
 })();
