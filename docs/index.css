@@ -1,4 +1,6 @@
 body {
-    margin: 0;
-    background-color: black;
+    background-color: #000;
+    color: #43F748;
+    font: 14px Consolas;
+    /* margin: 0; */
 }
