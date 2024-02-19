@@ -3784,7 +3784,6 @@ var unexportedSymbols = [
   'webgl_enable_WEBGL_multi_draw_instanced_base_vertex_base_instance',
   'allocateUTF8',
   'allocateUTF8OnStack',
-  'WS',
 ];
 unexportedSymbols.forEach(unexportedRuntimeSymbol);
 
