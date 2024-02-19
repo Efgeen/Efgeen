@@ -6,74 +6,28 @@
             body {
                 background-color: black;
                 margin: 0px;
-                color: white;
-            }
-            div {
-                display: hidden;
-                /* background-color: #303030; */
-                position: absolute;
-                white-space: pre;
-                font-family: 'Consolas';
-                font-size: 16px;
             }
         </style>
     </head>
     <body>
-        <script src="./efshell.js"></script>
-        <script src="./main.js"></script>
-        <!-- <script>
-            let index = 0;
-            const input = document.createElement("input");
-            input.type = "text";
-            input.oninput = (event) => {
-                for (let i = 0x00; i < event.target.value.length; ++i) {
-                    div.textContent += event.target.value[i];
-                }
-            };
-            document.body.appendChild(input);
-
-            const div = document.createElement("div");
-            div.textContent = " ";
-            div.onclick = () => {
-                input.focus();
-            };
-            document.body.appendChild(div);
-            const char = (() => {
-                return {
-                    width: div.offsetWidth,
-                    height: div.offsetHeight
-                }
-            })();
-            let buf;
-            function resize() {
-                buf = {
-                    width: Math.floor(window.innerWidth / char.width),
-                    height: Math.floor(window.innerHeight / char.height)
-                };
-            }
-            resize();
-            function clear() {
-                div.textContent = "";
-                for (let y = 0x00; y < buf.height; ++y) {
-                    for (let x = 0x00; x < buf.width; ++x) {
-                        div.textContent += " ";
-                    }
-                    div.textContent += "\n";
-                }
-            }
-            function reset() {
-                resize();
-                clear();
-            }
-            reset();
-            let wiw = window.innerWidth;
-            let wih = window.innerHeight;
+        <canvas id="canvas"></canvas>
+        <script src="./index.js"></script>
+        <script>
+            const canvas = document.getElementById("canvas");
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
             requestAnimationFrame(function frame() {
-                if (window.innerWidth !== wiw || window.innerHeight !== wih) {
-                    reset();
+                if (window.innerWidth !== width ||
+                        window.innerHeight !== height) {
+                    width = window.innerWidth;
+                    height = window.innerHeight;
+                    canvas.width = width;
+                    canvas.height = height;
                 }
                 requestAnimationFrame(frame);
             });
-        </script> -->
+        </script>
     </body>
 </html>

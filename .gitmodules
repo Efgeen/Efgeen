@@ -4,3 +4,9 @@
 [submodule "src/emsdk"]
 	path = src/emsdk
 	url = https://github.com/emscripten-core/emsdk
+[submodule "src/sokol"]
+	path = src/sokol
+	url = https://github.com/floooh/sokol
+[submodule "src/cimgui"]
+	path = src/cimgui
+	url = https://github.com/cimgui/cimgui

@@ -1,0 +1,8 @@
+cc = emcc
+
+cf = -D__EMSCRIPTEN__ -I../emsdk/upstream/emscripten/cache/sysroot/include -I../sokol -I../sokol/util -s USE_WEBGL2=1 -lwebsocket.js
+
+rule build
+    command = $cc $cf $in -o $out
+
+build index.js: build ../index.c

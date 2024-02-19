@@ -1,3 +1,10 @@
+-D__EMSCRIPTEN__
+-DSOKOL_GLES3
 -I
-.
-
+./emsdk/upstream/emscripten/cache/sysroot/include/
+-I
+./sokol/
+-I
+./sokol/util/
+-I
+./cimgui/
